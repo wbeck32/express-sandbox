@@ -1,0 +1,22 @@
+{
+  "name": "express-sandbox",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/server.js",
+  "scripts": {
+    "test:watch:nodemon": "nodemon --watch src --watch tests --exec 'npm test'",
+    "test:watch": "npm test -- -w",
+    "test": "mocha tests --reporter mocha-better-spec-reporter",
+    "start": "npm run test:watch:nodemon"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "mocha": "^3.4.2",
+    "mocha-better-spec-reporter": "^3.1.0",
+    "mongodb": "^2.2.30",
+    "nodemon": "^1.11.0"
+  }
+}
